@@ -23,4 +23,5 @@ jobs:
           pip install schedule
 
       - name: Run ETL pipeline
+        working-directory: Mehwish_013  # Specify the working directory
         run: python etl_pipeline.py
