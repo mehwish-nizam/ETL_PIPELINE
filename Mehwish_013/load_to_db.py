@@ -2,6 +2,7 @@ from pymongo import MongoClient
 import pandas as pd
 import json
 
+
 def load_data_to_mongo(df):
     with open("config/db_config.json") as f:
         config = json.load(f)
