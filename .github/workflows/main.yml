@@ -2,7 +2,7 @@ name: Daily ETL Pipeline
 
 on:
   schedule:
-    - cron: "0 12 * * *"  
+    - cron: "27 12 * * *"  
 
 jobs:
   run-etl:
@@ -17,6 +17,10 @@ jobs:
         with:
           python-version: '3.10'
 
+      - name: Log current time
+        run: |
+          echo "Current time: $(date)"
+
       - name: Install Dependencies
         run: |
           pip install -r requirements.txt
@@ -24,7 +28,13 @@ jobs:
       - name: Run FastAPI Server in Background
         run: |
           python3 data/api.py & disown
-          sleep 10  
+          sleep 15  # Give initial time for server to start
+          # Check FastAPI server readiness
+          until curl -s http://127.0.0.1:8000/competitorPricing; do
+            echo "Waiting for FastAPI to be ready..."
+            sleep 5  # Retry every 5 seconds
+          done
+          echo "FastAPI is ready!"  
 
       - name: Run ETL Pipeline
         run: |

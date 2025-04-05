@@ -39,18 +39,18 @@ print("Connection test:", collection.find_one())
 
 df_inventory = pd.DataFrame(list(collection.find()))
 
-# response = requests.get(api_url)  # Gradio APIs use POST requests
-# if response.status_code == 200:
-#     data = response.json()["data"]  # Extract data from Gradio response
-#     df_pricing = pd.DataFrame(data)  # Convert to Pandas DataFrame
-#     print(df_pricing.head())  # Display first 5 rows
-# else:
-#     print(f"API Error: {response.status_code}, {response.text}")
+response = requests.get(api_url)  # Gradio APIs use POST requests
+if response.status_code == 200:
+    data = response.json()["data"]  # Extract data from Gradio response
+    df_pricing = pd.DataFrame(data)  # Convert to Pandas DataFrame
+    print(df_pricing.head())  # Display first 5 rows
+else:
+    print(f"API Error: {response.status_code}, {response.text}")
 
 
 
 # Check All 5 sources data is loaded
-# print(df_pricing.head())
+print(df_pricing.head())
 # print(df_marketplace.head())
 # print(df_sales.head())
 # print(df_reviews.head())
