@@ -149,7 +149,7 @@ df_final.to_csv("output/final_cleaned_data.csv", index=False)
 
 client = MongoClient(mongo_uri)
 db = client["mobile_store"]
-collection = db["consolidated_data"]
+collection = db["final_cleaned_data"]
 df_final = df_final.drop(columns=["_id"], errors="ignore")  # Remove _id column if exists
 collection.insert_many(df_final.to_dict("records"))  # Upload data
 
