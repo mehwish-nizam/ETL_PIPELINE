@@ -1,0 +1,4 @@
+{
+  "mongodb_uri": "mongodb+srv://mehwish:mehwish123@cluster0.fwyzhi6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0&tlsAllowInvalidCertificates=true",
+  "api_url": "http://127.0.0.1:8000/competitorPricing"
+}

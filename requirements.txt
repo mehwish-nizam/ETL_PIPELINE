@@ -1,0 +1,11 @@
+pandas
+pymongo
+requests
+schedule
+openpyxl
+fastapi
+uvicorn 
+nest_asyncio 
+pyngrok 
+pymongo 
+certifi

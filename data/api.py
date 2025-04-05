@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1LRYOpUiGYtaXhsDy9772NWb37olTZWg3
 """
 
-!pip install fastapi uvicorn pyngrok nest-asyncio
-from google.colab import drive
+# !pip install fastapi uvicorn pyngrok nest-asyncio
+# from google.colab import drive
 
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
@@ -17,9 +17,13 @@ from pyngrok import ngrok
 import nest_asyncio
 import pandas as pd
 
-drive.mount('/content/drive')
+# drive.mount('/content/drive')
 
-!ngrok authtoken 2uyn7n3HKZWzId7Qa75cXvQwahe_467hvkc9pMxpgqYvkEcJA
+# ngrok authtoken '2uyn7n3HKZWzId7Qa75cXvQwahe_467hvkc9pMxpgqYvkEcJA'
+import subprocess
+
+subprocess.run(["ngrok", "authtoken", "2uyn7n3HKZWzId7Qa75cXvQwahe_467hvkc9pMxpgqYvkEcJA"])
+
 
 
 # Initialize FastAPI app

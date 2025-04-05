@@ -7,9 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1Nu8r6Ca_jNhY0YGoXuT106y_XoozEynn
 """
 
-from google.colab import drive
-drive.mount('/content/drive')
-!pip install pymongo
+# from google.colab import drive
+# drive.mount('/content/drive')
+# pip install pymongo
 import pymongo
 from pymongo import MongoClient
 import pandas as pd
@@ -34,6 +34,9 @@ db = client["mobile_store"]
 collection = db["inventory"]
 # Source 5: Rest API created using FastApi
 api_url = api_url
+print("Collection exists:", collection)
+print("Connection test:", collection.find_one())
+
 df_inventory = pd.DataFrame(list(collection.find()))
 
 response = requests.get(api_url)  # Gradio APIs use POST requests
@@ -42,7 +45,7 @@ if response.status_code == 200:
     df_pricing = pd.DataFrame(data)  # Convert to Pandas DataFrame
     print(df_pricing.head())  # Display first 5 rows
 else:
-    print(f"Error: {response.status_code}, {response.text}")
+    print(f"API Error: {response.status_code}, {response.text}")
 
 
 
@@ -138,21 +141,9 @@ df_pricing = df_pricing[df_pricing["Competitor Price"] > 0]
 #     Remaining stock levels
 df_final = df_sales_agg.merge(df_reviews_agg, on="Phone Model", how="left")
 df_final = df_final.merge(df_sales_inventory, on="Phone Model", how="left")
-df_final = df_final.merge(df_pricing, on="Phone Model", how="left")
+# df_final = df_final.merge(df_ pricing, on="Phone Model", how="left")
 
 #************* Data Consolidation ****************
 df_final.to_csv("output/final_cleaned_data.csv", index=False)
 
 
-
-#************* Data Loading ****************
-
-client = MongoClient(mongo_uri)
-db = client["mobile_store"]
-collection = db["final_cleaned_data"]
-df_final = df_final.drop(columns=["_id"], errors="ignore")  # Remove _id column if exists
-collection.insert_many(df_final.to_dict("records"))  # Upload data
-
-
-# Convert DataFrame to JSON and upload
-#collection.insert_many(df_final.to_dict("records"))
