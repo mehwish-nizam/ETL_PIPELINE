@@ -23,4 +23,3 @@ jobs:
           pip install schedule
 
       - name: Run ETL pipeline
-        run: python etl_pipeline.py
