@@ -1,0 +1,302 @@
+[
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Newegg",
+        "price": 1045
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Target",
+        "price": 705
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Newegg",
+        "price": 1335
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "B&H",
+        "price": 1268
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Micro Center",
+        "price": 597
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Target",
+        "price": 1356
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Newegg",
+        "price": 1209
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Micro Center",
+        "price": 913
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Best Buy",
+        "price": 1421
+    },
+    {
+        "brand": "iPhone",
+        "model": "iPhone 14 Pro",
+        "competitor": "Micro Center",
+        "price": 817
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "B&H",
+        "price": 1003
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Newegg",
+        "price": 1126
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Newegg",
+        "price": 655
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Micro Center",
+        "price": 903
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Newegg",
+        "price": 535
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Newegg",
+        "price": 1311
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Target",
+        "price": 882
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Micro Center",
+        "price": 1192
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Micro Center",
+        "price": 1011
+    },
+    {
+        "brand": "Samsung",
+        "model": "Samsung S23",
+        "competitor": "Micro Center",
+        "price": 898
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Target",
+        "price": 1002
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "B&H",
+        "price": 1385
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Best Buy",
+        "price": 663
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "B&H",
+        "price": 1327
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Best Buy",
+        "price": 1439
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Newegg",
+        "price": 1310
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Target",
+        "price": 738
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Best Buy",
+        "price": 1003
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Newegg",
+        "price": 1232
+    },
+    {
+        "brand": "Google",
+        "model": "Google Pixel 7",
+        "competitor": "Best Buy",
+        "price": 915
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Newegg",
+        "price": 1084
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "B&H",
+        "price": 1299
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Best Buy",
+        "price": 837
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Newegg",
+        "price": 564
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Newegg",
+        "price": 974
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Target",
+        "price": 1034
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Newegg",
+        "price": 1358
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Best Buy",
+        "price": 1493
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "B&H",
+        "price": 1040
+    },
+    {
+        "brand": "OnePlus",
+        "model": "OnePlus 11",
+        "competitor": "Best Buy",
+        "price": 1311
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Target",
+        "price": 1402
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Newegg",
+        "price": 905
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Micro Center",
+        "price": 505
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Newegg",
+        "price": 532
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Micro Center",
+        "price": 1119
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "B&H",
+        "price": 1112
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Newegg",
+        "price": 1016
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "Micro Center",
+        "price": 1452
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "B&H",
+        "price": 1080
+    },
+    {
+        "brand": "Xiaomi",
+        "model": "Xiaomi 12",
+        "competitor": "B&H",
+        "price": 717
+    }
+]
