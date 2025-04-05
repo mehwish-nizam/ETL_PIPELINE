@@ -23,4 +23,4 @@ jobs:
           pip install schedule
 
       - name: Run ETL pipeline
-        run: ls -la Mehwish_013
+        run: python etl_pipeline.py
