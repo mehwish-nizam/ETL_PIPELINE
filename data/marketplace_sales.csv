@@ -1,0 +1,51 @@
+Date,Platform,Brand,Model,Units Sold,Price per Unit (USD)
+2025-03-08,BestBuy,iPhone,iPhone 14 Pro,30,1114
+2025-03-06,Walmart,iPhone,iPhone 14 Pro,14,917
+2025-03-08,eBay,iPhone,iPhone 14 Pro,36,676
+2025-03-20,BestBuy,iPhone,iPhone 14 Pro,34,1032
+2025-03-08,Amazon,iPhone,iPhone 14 Pro,45,1128
+2025-03-19,BestBuy,iPhone,iPhone 14 Pro,30,1023
+2025-03-01,Amazon,iPhone,iPhone 14 Pro,42,1398
+2025-02-28,Amazon,iPhone,iPhone 14 Pro,40,801
+2025-03-16,eBay,iPhone,iPhone 14 Pro,13,1077
+2025-03-06,Newegg,iPhone,iPhone 14 Pro,26,611
+2025-02-27,Amazon,Samsung,Samsung S23,43,1111
+2025-03-19,Newegg,Samsung,Samsung S23,47,675
+2025-03-24,BestBuy,Samsung,Samsung S23,8,540
+2025-03-20,Newegg,Samsung,Samsung S23,11,1067
+2025-03-11,Newegg,Samsung,Samsung S23,50,521
+2025-03-19,eBay,Samsung,Samsung S23,45,711
+2025-03-27,BestBuy,Samsung,Samsung S23,31,1025
+2025-02-26,eBay,Samsung,Samsung S23,8,573
+2025-03-23,BestBuy,Samsung,Samsung S23,49,540
+2025-03-22,Walmart,Samsung,Samsung S23,15,1025
+2025-03-16,BestBuy,Google,Google Pixel 7,30,1402
+2025-03-19,Newegg,Google,Google Pixel 7,45,1330
+2025-03-10,eBay,Google,Google Pixel 7,28,856
+2025-03-20,Newegg,Google,Google Pixel 7,45,1274
+2025-03-17,Walmart,Google,Google Pixel 7,13,1449
+2025-03-24,Newegg,Google,Google Pixel 7,43,572
+2025-03-19,eBay,Google,Google Pixel 7,46,642
+2025-03-19,eBay,Google,Google Pixel 7,44,881
+2025-03-22,Newegg,Google,Google Pixel 7,15,752
+2025-03-22,Walmart,Google,Google Pixel 7,8,774
+2025-03-15,Amazon,OnePlus,OnePlus 11,44,1306
+2025-03-11,eBay,OnePlus,OnePlus 11,47,906
+2025-03-17,eBay,OnePlus,OnePlus 11,27,1445
+2025-02-28,BestBuy,OnePlus,OnePlus 11,23,1046
+2025-02-26,Amazon,OnePlus,OnePlus 11,31,565
+2025-03-21,Newegg,OnePlus,OnePlus 11,29,1098
+2025-03-22,eBay,OnePlus,OnePlus 11,44,1124
+2025-03-26,eBay,OnePlus,OnePlus 11,12,559
+2025-03-15,Walmart,OnePlus,OnePlus 11,8,1071
+2025-03-02,Amazon,OnePlus,OnePlus 11,33,917
+2025-03-19,Newegg,Xiaomi,Xiaomi 12,25,1300
+2025-03-10,BestBuy,Xiaomi,Xiaomi 12,48,915
+2025-03-23,BestBuy,Xiaomi,Xiaomi 12,10,845
+2025-03-10,Newegg,Xiaomi,Xiaomi 12,25,1500
+2025-03-15,Newegg,Xiaomi,Xiaomi 12,26,914
+2025-03-10,BestBuy,Xiaomi,Xiaomi 12,6,522
+2025-02-28,Walmart,Xiaomi,Xiaomi 12,25,1096
+2025-02-26,Amazon,Xiaomi,Xiaomi 12,27,630
+2025-02-28,Walmart,Xiaomi,Xiaomi 12,50,1157
+2025-03-15,BestBuy,Xiaomi,Xiaomi 12,35,1284
