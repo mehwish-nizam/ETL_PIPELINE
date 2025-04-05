@@ -39,13 +39,13 @@ print("Connection test:", collection.find_one())
 
 df_inventory = pd.DataFrame(list(collection.find()))
 
-response = requests.get(api_url)  # Gradio APIs use POST requests
-if response.status_code == 200:
-    data = response.json()["data"]  # Extract data from Gradio response
-    df_pricing = pd.DataFrame(data)  # Convert to Pandas DataFrame
-    print(df_pricing.head())  # Display first 5 rows
-else:
-    print(f"API Error: {response.status_code}, {response.text}")
+# response = requests.get(api_url)  # Gradio APIs use POST requests
+# if response.status_code == 200:
+#     data = response.json()["data"]  # Extract data from Gradio response
+#     df_pricing = pd.DataFrame(data)  # Convert to Pandas DataFrame
+#     print(df_pricing.head())  # Display first 5 rows
+# else:
+#     print(f"API Error: {response.status_code}, {response.text}")
 
 
 
@@ -62,7 +62,7 @@ df_sales.fillna(df_sales.median(numeric_only=True), inplace=True)
 df_marketplace.fillna(df_marketplace.median(numeric_only=True), inplace=True)
 df_reviews.fillna("Unknown", inplace=True)
 df_inventory.fillna("Unknown", inplace=True)
-df_pricing.fillna("Unknown", inplace=True)
+# df_pricing.fillna("Unknown", inplace=True)
 
 # Remove Duplicates
 
@@ -70,7 +70,7 @@ df_sales.drop_duplicates(inplace=True)
 df_marketplace.drop_duplicates(inplace=True)
 df_reviews.drop_duplicates(inplace=True)
 df_inventory.drop_duplicates(inplace=True)
-df_pricing.drop_duplicates(inplace=True)
+# df_pricing.drop_duplicates(inplace=True)
 
 
 #************* Data Normalization ****************
@@ -86,7 +86,7 @@ df_sales["Phone Model"] = df_sales["Phone Model"].str.title()
 df_marketplace["Model"] = df_marketplace["Model"].str.title()
 df_reviews["Model"] = df_reviews["Model"].str.title()
 df_inventory["Model"] = df_inventory["Model"].str.title()
-df_pricing["model"] = df_pricing["model"].str.title()
+# df_pricing["model"] = df_pricing["model"].str.title()
 
 #************* Data Aggregation ****************
 
@@ -122,7 +122,7 @@ df_inventory["Last Restocked Date"] = pd.to_datetime(df_inventory["Last Restocke
 
 #************* Categorize Data Types ****************
 
-df_pricing.rename(columns={"model": "Phone Model", "competitor": "Competitor Name", "price": "Competitor Price"}, inplace=True)
+# df_pricing.rename(columns={"model": "Phone Model", "competitor": "Competitor Name", "price": "Competitor Price"}, inplace=True)
 
 #************* Data Validation ****************
 
@@ -130,7 +130,7 @@ df_pricing.rename(columns={"model": "Phone Model", "competitor": "Competitor Nam
 # Negative sales figures
 # Zero or negative prices
 df_sales = df_sales[df_sales["Units Sold"] > 0]
-df_pricing = df_pricing[df_pricing["Competitor Price"] > 0]
+# df_pricing = df_pricing[df_pricing["Competitor Price"] > 0]
 
 
 #************* Data Aggregation ****************
