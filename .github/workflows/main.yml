@@ -2,7 +2,7 @@ name: Daily ETL Pipeline
 
 on:
   schedule:
-    - cron: "40 19 * * *"  
+    - cron: "20 09 * * *"  
 
 jobs:
   run-etl:
