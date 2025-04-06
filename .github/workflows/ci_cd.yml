@@ -1,0 +1,37 @@
+name: Run ETL Tests
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+      
+      - name: Run FastAPI Server in Background
+        run: |
+          python3 data/api.py & disown
+          sleep 15  # Give initial time for server to start
+          # Check FastAPI server readiness
+          until curl -s http://127.0.0.1:8000/competitorPricing; do
+            echo "Waiting for FastAPI to be ready..."
+            sleep 5  # Retry every 5 seconds
+          done
+          echo "FastAPI is ready!"  
+
+      - name: Run tests
+        run: |
+          pytest tests/

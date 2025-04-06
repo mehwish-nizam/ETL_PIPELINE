@@ -1,4 +1,0 @@
-{
-  "mongodb_uri": "mongodb+srv://mehwish:mehwish123@cluster0.fwyzhi6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
-  "api_url": "https://e218-34-32-194-143.ngrok-free.app/competitorPricing"
-}

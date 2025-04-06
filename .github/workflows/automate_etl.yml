@@ -3,7 +3,7 @@ name: Daily ETL Pipeline
 on:
   workflow_dispatch:
   schedule:
-    - cron: "25 09 * * *"  
+    - cron: "0 0 * * *"  
 
 jobs:
   run-etl:

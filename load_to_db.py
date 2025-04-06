@@ -10,7 +10,7 @@ def load_data_to_mongo(df):
     db = client["mobile_store"]
     collection = db["consolidated_data"]
     df.drop(columns=["_id"], errors="ignore", inplace=True)
-    # collection.insert_many(df.to_dict("records"))
+    collection.insert_many(df.to_dict("records"))
     print("Data loaded successfully")
 
 if __name__ == "__main__":

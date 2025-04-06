@@ -51,10 +51,10 @@ else:
 
 # Check All 5 sources data is loaded
 print(df_pricing.head())
-# print(df_marketplace.head())
-# print(df_sales.head())
-# print(df_reviews.head())
-# print(df_inventory.head())
+print(df_marketplace.head())
+print(df_sales.head())
+print(df_reviews.head())
+print(df_inventory.head())
 
 #************* Data Cleaning ****************
 # Handling Missing Values
@@ -62,7 +62,7 @@ df_sales.fillna(df_sales.median(numeric_only=True), inplace=True)
 df_marketplace.fillna(df_marketplace.median(numeric_only=True), inplace=True)
 df_reviews.fillna("Unknown", inplace=True)
 df_inventory.fillna("Unknown", inplace=True)
-# df_pricing.fillna("Unknown", inplace=True)
+df_pricing.fillna("Unknown", inplace=True)
 
 # Remove Duplicates
 
@@ -70,7 +70,7 @@ df_sales.drop_duplicates(inplace=True)
 df_marketplace.drop_duplicates(inplace=True)
 df_reviews.drop_duplicates(inplace=True)
 df_inventory.drop_duplicates(inplace=True)
-# df_pricing.drop_duplicates(inplace=True)
+df_pricing.drop_duplicates(inplace=True)
 
 
 #************* Data Normalization ****************
@@ -86,7 +86,7 @@ df_sales["Phone Model"] = df_sales["Phone Model"].str.title()
 df_marketplace["Model"] = df_marketplace["Model"].str.title()
 df_reviews["Model"] = df_reviews["Model"].str.title()
 df_inventory["Model"] = df_inventory["Model"].str.title()
-# df_pricing["model"] = df_pricing["model"].str.title()
+df_pricing["model"] = df_pricing["model"].str.title()
 
 #************* Data Aggregation ****************
 
@@ -122,7 +122,7 @@ df_inventory["Last Restocked Date"] = pd.to_datetime(df_inventory["Last Restocke
 
 #************* Categorize Data Types ****************
 
-# df_pricing.rename(columns={"model": "Phone Model", "competitor": "Competitor Name", "price": "Competitor Price"}, inplace=True)
+df_pricing.rename(columns={"model": "Phone Model", "competitor": "Competitor Name", "price": "Competitor Price"}, inplace=True)
 
 #************* Data Validation ****************
 
@@ -130,7 +130,7 @@ df_inventory["Last Restocked Date"] = pd.to_datetime(df_inventory["Last Restocke
 # Negative sales figures
 # Zero or negative prices
 df_sales = df_sales[df_sales["Units Sold"] > 0]
-# df_pricing = df_pricing[df_pricing["Competitor Price"] > 0]
+df_pricing = df_pricing[df_pricing["Competitor Price"] > 0]
 
 
 #************* Data Aggregation ****************
